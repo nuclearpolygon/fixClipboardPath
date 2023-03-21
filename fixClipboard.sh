@@ -1,4 +1,5 @@
-#!/bin/zsh
-
-source ./venv/bin/activate
-python ./main.py
+#!/bin/bash
+script_dir=$( dirname -- "${BASH_SOURCE[0]}")
+echo $script_dir
+source $script_dir/venv/bin/activate
+python $script_dir/main.py
