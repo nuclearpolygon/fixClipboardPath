@@ -1,0 +1,4 @@
+Levenshtein==0.20.9
+pyperclip==1.8.2
+python-Levenshtein==0.20.9
+rapidfuzz==2.13.7

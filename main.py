@@ -7,7 +7,7 @@ import platform
 if platform.system() == 'Windows':
     map_path = {'/media/white': 'Y:', '/media/black': 'X:'}
 else:
-    map_path = {'Y:': '/media/white', 'V:': '/media/white', 'X:': '/media/black'}
+    map_path = {'Y:': '/media/white', 'V:': '/media/white', 'T:': '/media/white', 'X:': '/media/black'}
 
 while True:
     spam = pyperclip.paste()
