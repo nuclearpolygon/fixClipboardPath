@@ -1,3 +1,6 @@
 SET root_dir=%~dp0
-pip install -r %root_dir%requirements.txt
-sc.exe create fixclipboard binPath= "%root_dir%/fixClipboard.bat" start= auto
+mklink "%rootdir%wnd\lesta_fixClipboard.exe" "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup\lesta_fixClipboard.exe"
+%PROGRAMDATA%\Microsoft\Windows\Start\ Menu\Programs\Startup\lesta_fixClipboard.exe
+echo "symlink created: %PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup\lesta_fixClipboard.exe"
+echo "installation completed"
+pause
