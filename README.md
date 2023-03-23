@@ -10,4 +10,4 @@ finds paths in clipboard and fix it depending on your system
 ./install.sh</code>
 
 ### for Windows users:
-just run `install.bat` script as Administrator
+just run `install.bat`
