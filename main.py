@@ -13,13 +13,13 @@ while True:
     spam = pyperclip.paste()
     res = spam
     for k, v in map_path.items():
-        if k in res:
+        if res.startswith(k):
             if platform.system() != 'Windows':
                 res = res.replace('\\', '/')
             res = res.replace(k, v)
             res = os.path.normpath(res)
-            # print(res, k, v)
-            pyperclip.copy(res)
+            if Path(res).exists():
+                pyperclip.copy(res)
             # break
 
     # print(spam, end='\r')
